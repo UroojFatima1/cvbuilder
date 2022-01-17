@@ -19,7 +19,16 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    
     <style>
+        body{
+            background-image: url(images/bg1.jpeg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
     .addButton {
         color: #1a5672;
         border: 2px dashed #1a5672;
@@ -75,9 +84,14 @@
             </span>
         </div>
     </nav>
-    <div class="wrap-container pt-4 pb-3">
-        <div class="d-flex align-items-middle col-11 ">
-            <div class="progress1 col-8 ">
+        <div class="row align-items-middle ms-2 mt-5 col-10">
+            <div class="ms-5 col-3">
+                <h4 class="h-font">
+                    Work Experience Summary
+                </h4>
+                <p class="pt-2 ps-2 lead">Here is a summary of your work places.</p>
+            </div>
+            <div class="progress1 col-7 me-1 ">
                 <div class="circle done">
                     <span class="label">1</span>
                     <span class="title" style="font-weight:500; color:black;">Basic</span>
@@ -104,14 +118,9 @@
                 </div>
             </div>
         </div>
-        <div class="container rounded mt-3 mb-5">
-            <div class="heading ms-3">
-                <h4 class="ps-2">
-                    Work Experience Summary
-                </h4>
-                <p class="pt-2 ps-2 lead">Here is a summary of your work places.</p>
-            </div>
-            <table class="table vertical-align: middle table-bordered m-4 col-10 ">
+        <div class="container rounded align-items-center ms-5 mt-3 mb-5">
+            
+            <table class=" m-4 table vertical-align: middle table-bordered col-10 ">
                 <?php
                     if(isset($_SESSION['first_name']) && isset($_SESSION['last_name']))
                     {
@@ -194,7 +203,6 @@
             </div>
         </div>
 
-    </div>
 
     <footer class="footer " id="footer ">
         <div class="container ">

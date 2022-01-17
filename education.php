@@ -20,9 +20,12 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    
     <style>
-        .wrap-container {
+    body{
     background-image: url(images/bg1.jpeg) !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,10 +60,15 @@
             </span>
         </div>
     </nav>
-    
-    <div class="wrap-container pt-4 pb-3">
-    <div class="d-flex align-items-middle col-11 ">
-           <div class="progress1 col-8 ">
+
+    <div class="row align-items-middle ms-5 mt-5 col-10 ">
+            <div class="ms-5 col-3">
+                <h4 class="h-font">
+                    Education
+                </h4>
+                <p class="pt-2 ps-2 ms-2 lead">Tell us about your education, add as many schools as you want.</p>
+            </div>
+           <div class="progress1 col-7 me-1 ">
                <div class="circle done">
                  <span class="label">1</span>
                  <span class="title" style="font-weight:500; color:black;">Basic</span>
@@ -88,13 +96,8 @@
              </div>
        </div>
    
-        <div class="container rounded mt-5 mb-5">
-             <div class="ms-3 ">
-                <h4 class="heading ps-2 ms-2">
-                    Education
-                </h4>
-                <p class="pt-2 ps-2 ms-2 lead">Tell us about your education, add as many schools as you want.</p>
-            </div>
+        <div class="container rounded mt-1 mb-5">
+             
             <form method="post" enctype="application/x-www-form-urlencoded">
                 <div class="ms-4 shadow-sm mb-5 bg-white rounded p-4">
                     <div class="row pt-1 ps-2">
@@ -180,7 +183,6 @@
             </form>
         </div>
 
-    </div>
 
     <footer class="footer" id="footer">
         <div class="container">

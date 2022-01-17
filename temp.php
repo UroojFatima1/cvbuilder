@@ -1,26 +1,20 @@
 <?php
-session_start();
-
 // Creation of a php variable and assigning a value to it.
 if (isset($_POST['button1'])) {
     $btn = $_POST['button1'];
     $color=$_POST['color'];
     $_SESSION['template']=$btn;
     $_SESSION['color']=$color;
-    header("Location:templateredirection.php");
-
 } elseif (isset($_POST['button2'])) {
     $btn = $_POST['button2'];
     $color=$_POST['color'];
     $_SESSION['template']=$btn;
     $_SESSION['color']=$color;
-    header("Location:templateredirection.php");
 } elseif (isset($_POST['button3'])) {
     $btn = $_POST['button3'];
     $color=$_POST['color'];
     $_SESSION['template']=$btn;
     $_SESSION['color']=$color;
-    header("Location:templateredirection.php");
 }
 ?>
 <!DOCTYPE html>
@@ -93,11 +87,10 @@ if (isset($_POST['button1'])) {
                     </div>
                     <div class="col-sm-12 col-md-12  col-lg-4">
                     <ul class="list d-flex">
-                    <li class="circle" id="c4" onclick="colorborder(this)"style="background-color:#4682bf"></li>
                     <li class="circle" id="c1" onclick="colorborder(this) "style="background-color:#10806d"></li>
                     <li class="circle" id="c2" onclick="colorborder(this)"style="background-color:#b16713"></li>
                     <li class="circle" id="c3" onclick="colorborder(this)" style="background-color:#380f0d"></li>
-                    </ul>
+                    <li class="circle" id="c4" onclick="colorborder(this)"style="background-color:#4682bf"></li></ul>
                         <div class="card" class="imglink">
                             <a href="#"><img src="imgaes/temp2.jpg" style="width: 20rem; height: 30rem;" class="card-img-top"></a>
                             <input type="submit" class="btn btn-danger  " id="2" value="Create CV2" name="button2">
@@ -139,9 +132,7 @@ if (isset($_POST['button1'])) {
     child.style.border="none";});
     e.style.border="5px solid gray";
     var bgcolor = e.style.backgroundColor;
-    document.getElementById("mydata").value=bgcolor;
-    }
+    document.getElementById("mydata").value=bgcolor;}
 </script>
 </body>
-
 </html>
