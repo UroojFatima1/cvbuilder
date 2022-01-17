@@ -10,7 +10,7 @@ if (isset($_POST['summary'])){
     
 }
 if ( $_SESSION['template']=="Create CV1"){
-    header("Location:templates/template 1/template1.php");
+    header("Location:templates/template3/template3.php");
 }
    
 if ( $_SESSION['template']=="Create CV2"){
@@ -18,6 +18,6 @@ if ( $_SESSION['template']=="Create CV2"){
 }
    
 if ( $_SESSION['template']=="Create CV3"){
-    header("Location:templates/template3/template3.php");
+    header("Location:templates/template 1/template1.php");
 }
 ?>
