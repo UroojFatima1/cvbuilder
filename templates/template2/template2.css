@@ -25,13 +25,8 @@ html {
 
 }
 
-* {
-	box-sizing: border-box;
-}
-
 body {
 	margin: 0;
-	padding: 3rem 1rem;
 	min-height: 100vh;
 	background-color: var(--color-gray-light-3);
 }

@@ -1,20 +1,26 @@
 <?php
+session_start();
+
 // Creation of a php variable and assigning a value to it.
 if (isset($_POST['button1'])) {
     $btn = $_POST['button1'];
     $color=$_POST['color'];
     $_SESSION['template']=$btn;
     $_SESSION['color']=$color;
+    header("Location:templateredirection.php");
+
 } elseif (isset($_POST['button2'])) {
     $btn = $_POST['button2'];
     $color=$_POST['color'];
     $_SESSION['template']=$btn;
     $_SESSION['color']=$color;
+    header("Location:templateredirection.php");
 } elseif (isset($_POST['button3'])) {
     $btn = $_POST['button3'];
     $color=$_POST['color'];
     $_SESSION['template']=$btn;
     $_SESSION['color']=$color;
+    header("Location:templateredirection.php");
 }
 ?>
 <!DOCTYPE html>
@@ -66,12 +72,36 @@ if (isset($_POST['button1'])) {
             </div>
         </nav>
         <div class="gap"></div>
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center pt-3">
             <p class="h-font mb-3">Select your desired color and template to start making your CV!</p>
         </div>
         <form method="post">
             <div class="container">
                 <div class="row ">
+                <div class="col-sm-12 col-md-12  col-lg-4">
+                    <ul class="list d-flex">
+                    <li class="circle" id="c1" onclick="colorborder(this)" style="background-color:#00ab9f;"></li>
+                    <li class="circle" id="c2" onclick="colorborder(this)" style="background-color:navy"></li>
+                    <li class="circle" id="c3" onclick="colorborder(this)" style="background-color:rgba(220, 20, 60, 0.493)"></li>
+                    <li class="circle" id="c4" onclick="colorborder(this) "style="background-color:mediumseagreen"></li></ul>
+                        <div class="card" class="imglink">
+                            <a href="#"><img src="imgaes/temp1.jpg" style="width: 20rem; height: 30rem;" class="card-img-top"></a>
+                            <input type="submit" class="btn btn-danger" id="3" value="Create CV1" name="button3">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12  col-lg-4">
+                    <ul class="list d-flex">
+                    <li class="circle" id="c4" onclick="colorborder(this)"style="background-color:#4682bf"></li>
+                    <li class="circle" id="c1" onclick="colorborder(this) "style="background-color:#10806d"></li>
+                    <li class="circle" id="c2" onclick="colorborder(this)"style="background-color:#b16713"></li>
+                    <li class="circle" id="c3" onclick="colorborder(this)" style="background-color:#380f0d"></li>
+                    </ul>
+                        <div class="card" class="imglink">
+                            <a href="#"><img src="imgaes/temp2.jpg" style="width: 20rem; height: 30rem;" class="card-img-top"></a>
+                            <input type="submit" class="btn btn-danger  " id="2" value="Create CV2" name="button2">
+                        </div>
+                    </div>
+                    
                     <div class="col-sm-12 col-md-12  col-lg-4">
                     <ul class="list d-flex">
                     <li class="circle" id="c1" onclick="colorborder(this)" style="background-color:#f5f5f5"></li>
@@ -82,29 +112,7 @@ if (isset($_POST['button1'])) {
                             <a href="#">
                                 <img src="imgaes/temp3.jpg" style="width: 20rem; height: 30rem;" class="ig" class="card-img-top">
                             </a>
-                            <input type="submit" class="btn btn-danger " id="1" value="Create CV1" name="button1">
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12  col-lg-4">
-                    <ul class="list d-flex">
-                    <li class="circle" id="c1" onclick="colorborder(this) "style="background-color:#10806d"></li>
-                    <li class="circle" id="c2" onclick="colorborder(this)"style="background-color:#b16713"></li>
-                    <li class="circle" id="c3" onclick="colorborder(this)" style="background-color:#380f0d"></li>
-                    <li class="circle" id="c4" onclick="colorborder(this)"style="background-color:#4682bf"></li></ul>
-                        <div class="card" class="imglink">
-                            <a href="#"><img src="imgaes/temp2.jpg" style="width: 20rem; height: 30rem;" class="card-img-top"></a>
-                            <input type="submit" class="btn btn-danger  " id="2" value="Create CV2" name="button2">
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12  col-lg-4">
-                    <ul class="list d-flex">
-                    <li class="circle" id="c1" onclick="colorborder(this)" style="background-color:#00ab9f;"></li>
-                    <li class="circle" id="c2" onclick="colorborder(this)" style="background-color:navy"></li>
-                    <li class="circle" id="c3" onclick="colorborder(this)" style="background-color:rgba(220, 20, 60, 0.493)"></li>
-                    <li class="circle" id="c4" onclick="colorborder(this) "style="background-color:mediumseagreen"></li></ul>
-                        <div class="card" class="imglink">
-                            <a href="#"><img src="imgaes/temp1.jpg" style="width: 20rem; height: 30rem;" class="card-img-top"></a>
-                            <input type="submit" class="btn btn-danger" id="3" value="Create CV3" name="button3">
+                            <input type="submit" class="btn btn-danger " id="1" value="Create CV3" name="button1">
                         </div>
                     </div>
                 </div>
@@ -132,7 +140,9 @@ if (isset($_POST['button1'])) {
     child.style.border="none";});
     e.style.border="5px solid gray";
     var bgcolor = e.style.backgroundColor;
-    document.getElementById("mydata").value=bgcolor;}
+    document.getElementById("mydata").value=bgcolor;
+    }
 </script>
 </body>
+
 </html>

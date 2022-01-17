@@ -3,8 +3,7 @@ include_once 'config.php';
 session_start();
 $firstname=$_SESSION['first_name'];
 $lastname=$_SESSION['last_name'];
-
-    ?>
+?>
 <!doctype html>
 <html lang="en">
 
