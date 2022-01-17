@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -114,7 +115,7 @@ session_start();
                                 <div class="col-md-12"><label class="labels">Linkedin Profile</label><input type="url"
                                         class="form-control" name="linkedin" placeholder="https://www.linkedin.com/in/ayesha-khalid-42473a196/"></div>
                                 <div class="col-md-12"><label class="labels">GitHub Account</label><input type="text"
-                                        class="form-control" name="github" placeholder="ayeshakhalid17"\>
+                                        class="form-control" name="github" placeholder="https://github.com/ayeshakhalid17"\>
                                 </div>
                             </div>
                             <div class="mt-5 text-center"><button class="btn btn-primary profile-button align-left"

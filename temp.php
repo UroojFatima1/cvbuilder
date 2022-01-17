@@ -88,7 +88,7 @@ if (isset($_POST['button1'])) {
                             <a href="#">
                                 <img src="imgaes/temp3.jpg" style="width: 20rem; height: 30rem;" class="ig" class="card-img-top">
                             </a>
-                            <input type="submit" class="btn btn-danger " id="1" value="1" name="button1">
+                            <input type="submit" class="btn btn-danger " id="1" value="Create CV1" name="button1">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12  col-lg-4">
@@ -100,7 +100,7 @@ if (isset($_POST['button1'])) {
                     </ul>
                         <div class="card" class="imglink">
                             <a href="#"><img src="imgaes/temp2.jpg" style="width: 20rem; height: 30rem;" class="card-img-top"></a>
-                            <input type="submit" class="btn btn-danger  " id="2" value="2" name="button2">
+                            <input type="submit" class="btn btn-danger  " id="2" value="Create CV2" name="button2">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12  col-lg-4">
@@ -111,7 +111,7 @@ if (isset($_POST['button1'])) {
                     <li class="circle" id="c4" onclick="colorborder(this) "style="background-color:mediumseagreen"></li></ul>
                         <div class="card" class="imglink">
                             <a href="#"><img src="imgaes/temp1.jpg" style="width: 20rem; height: 30rem;" class="card-img-top"></a>
-                            <input type="submit" class="btn btn-danger" id="3" value="3" name="button3">
+                            <input type="submit" class="btn btn-danger" id="3" value="Create CV3" name="button3">
                         </div>
                     </div>
                 </div>

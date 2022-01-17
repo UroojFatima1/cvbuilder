@@ -9,15 +9,15 @@ if (isset($_POST['summary'])){
     $insertion=mysqli_query($conn, $insert_q);
     
 }
-if ( $_SESSION['template']=="1"){
+if ( $_SESSION['template']=="Create CV1"){
     header("Location:templates/template 1/template1.php");
 }
    
-if ( $_SESSION['template']=="2"){
-    header("Location:templates/template 1/template1.php");
+if ( $_SESSION['template']=="Create CV2"){
+    header("Location:templates/template2/template2.php");
 }
    
-if ( $_SESSION['template']=="3"){
-    header("Location:templates/template 1/template1.php");
+if ( $_SESSION['template']=="Create CV3"){
+    header("Location:templates/template3/template3.php");
 }
 ?>
